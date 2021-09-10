@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from bnbminer.finance/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 21:14:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Hire Miners to earn BNB" name="description">
+	<meta name="image" content="assets/img/miner-og-image.png">
+    <!-- opengraph image -->
+	<meta property="og:image" content="assets/img/miner-og-image.png">
+	<meta property="og:title" content="BNBMiner.Finance">
+  <meta property="og:type" content="website"/>
+	<meta property="og:description" content="Hire Miners to earn BNB">
+	<meta property="og:url" content="index.html">
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="index.html">
+	<meta name="twitter:title" content="BNBMiner.Finance">
+	<meta name="twitter:description" content="Hire Miners to earn BNB">
+	<meta name="twitter:image" content="assets/img/miner-og-image.png">
+	<!-- favicon files -->
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />	
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+	<title>BNBMiner.Finance</title>
+	<!-- bootstrap core CSS -->
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="jumbotron-narrow.css" rel="stylesheet">
+	<link href="custom.css" rel="stylesheet">
+	<link href="assets/fonts/fonts.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="modal" id="myModal">
+		<div class="modal-content">
+			<div id="modal-internal"></div>
+		</div>
+	</div>
+	<div class="container">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div></div>
+    <div class="navbar-header">
+    </div>
+
+    <div class="mobile-align">
+      <ul class="nav navbar-nav navbar-right font-weight-normal">
+          <li><a class="social-pad"><img src="#" class="social-icons" onclick="document.getElementById('lostmojo').pause();" /><span class="hide-mobile"></span></a></li>
+          <li><a class="social-pad" href="https://t.me/bnbminer" target="_blank"><img alt="telegram" class="social-icons" src="assets/img/social-icons/telegram.svg"><span class="hide-mobile">Telegram</span></a></li>
+        <li><a class="social-pad" href="https://bscscan.com/address/0xce93f9827813761665ce348e33768cb1875a9704" target="_blank"><img alt="BSCSCAN" class="social-icons" src="assets/img/social-icons/bscscan3.png"><span class="hide-mobile">Verified Contract</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div>
+  <ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" id="miners-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">BNB Miner</a></li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
+      <!-- bnb miner -->
+
+
+      <center>
+          <img alt="BNB Miner" src="assets/img/bnbminer1095apr.png" href="index.html" width="100%" height="auto">
+          </center>
+      <div class="jumbotron">
+  			<div class="container-fluid miners-tally-container">
+  				<div class="row">
+  					<div class="col-md-12">
+  						<h2 class="tally-text">You have <span class="numminers">0</span> Miners</h2>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-6 nopad-left nopad-lr">
+  						<div class="prod-contain-top">
+  							<img alt="Miners" class="main-img" src="assets/img/minerdigging.png">
+  							<h2>Digging</h2>
+  						</div>
+  						<div class="prod-contain-bottom">
+  							<h2><span id="production">0</span></h2>
+  							<p class="pphr">feet per hour</p>
+  							<p class="mw-250"><br/>
+                  <span id="sellsforexample"></span>
+                </p>
+  						</div>
+  					</div>
+  					<div class="col-md-6 nopad-right nopad-lr">
+  						<div class="hold-contain-top">
+  							<img alt="Miners" class="main-img" src="assets/img/minerwithwheelbarrel.png">
+  							<h2>Mined</h2>
+  						</div>
+  						<div class="hold-contain-bottom">
+  							<h2><span id="sellprice">?</span></h2>
+  							<p class="pphr">bnb in barrel</p>
+  							<p class="mw-250"><br/><span id="timeuntilfull">?</span><br>
+  							until barrel is full</p>
+  						</div>
+  					</div>
+  					</div>	
+  			</div>	
+  			
+  					<div class="col-md-6 nopad-left nopad-lr">
+  						<div class="spend-input">
+  						    <p style="color:#354D5F; font-size:14px;">Enter BNB Amount & Click Hire Below</p>
+  							<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1" type="number" value="1"> <span class="bnb-text">BNB</span>
+  						</div><a class="btn btn-lg btn-buy" onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() " role="button">Hires <span id="eggstobuy">?</span> Miners</a>
+  					</div>
+  				<div class="row">
+  				    <div width="250"
+  			<p><a class="btn btn-lg btn-hatch" onclick="hatchEggs1(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play()" role="button">Hire More Miners</a></p>
+  					</div>
+  				<div width="250"></div>
+  						<p><a class="btn btn-lg btn-sell" onclick="sellEggs(displayTransactionMessage); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo3').play(); document.getElementById('sellprice')" role="button">Pocket Your BNB</a></p>
+  					</div>
+				
+					<div class="container altcolor">
+					<br>
+  				<div class="row">
+  					<p><span id="contractBal">Contract Balance: ?</span></p>
+  				</div>
+                <div class="row">
+  					<p><span id="userTrx">Your Balance: ?</span></p>
+  				</div>
+  			</div>
+  	  
+  		</div>
+    </div>
+    
+		<footer class="footer">
+
+
+			<div class="row">
+				<div class="col-lg-6">
+				    <h4><u>Sustainability</u></h4>
+                    <p>Unlike it's predecessors which paid 100% daily, causing instant and massive inflation. BNB Miner pays a modest 3% daily, allowing investors to rest easy knowing that their investments have unlimited growth potential and a maximum, improbable risk of less than 3%.
+                    
+                    <h4><u>Verified Public Contract</u></h4>
+                    <p>The BNB Miner contract is public, verified and can be viewed here on <a href="https://bscscan.com/address/0xce93f9827813761665ce348e33768cb1875a9704" target="_blank"><u>BSCScan</u></a>.
+                    </p>
+                    
+                    
+				</div>
+				<div class="col-lg-6">
+				    <h4><u>Miner Info</u></h4>
+					<p>BNB Miner pays 3% daily, according to the current mining efficiency rate. The mining efficiency rate rises and falls as you and other players hire miners, compound earnings and pocket BNB. </p>
+					<p>The object of the game is hiring more miners, sooner and more often than other players. This in turn earns you more BNB faster. Hiring more miners using your daily BNB earnings will 3x your miners within 30 days or less.</p>
+					
+				</div>
+                
+			<div class=""></div>
+			    <div class="col-lg-12">
+  					<center><p><span><a href="instructions.html" target="_blank"><img alt="How To Start Mining" src="assets/img/quesionmarkguy.png" width="15%" height="auto"><b>How To Start Mining</b></a></span></p></center>
+  				</div>
+				<div class="">
+				    <div class="col-md-12">
+				<font style="font-size:14px">
+					<center><p>Share your BNB Miner referral link, our contract pays you a <b>10%</b> referral fee when anyone uses your link to hire miners: <a id="playerreflink" onclick="copyRef()">?
+					<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a></p></center></font>
+			</div>
+					<center><ul class="nav navbar-nav navbar-right font-weight-normal">
+          <li><a class="social-pad" href="https://t.me/bnbminer" target="_blank"><img alt="Telegram" class="social-icons" src="assets/img/social-icons/telegram.svg"><span class="hide-mobile">Telegram</span></a></li>
+          <li><a class="social-pad" href="https://twitter.com/Da_Developer" target="_blank"><img alt="Twitter" class="social-icons" src="assets/img/social-icons/Twitter-Logo.png"><span class="hide-mobile">Twitter</span></a></li>
+        <li><a class="social-pad" href="https://bscscan.com/address/0xce93f9827813761665ce348e33768cb1875a9704" target="_blank"><img alt="BSCSCAN" class="social-icons" src="assets/img/social-icons/bscscan3.png"><span class="hide-mobile">Verified Contract</span></a></li>
+      </ul></center>
+                    
+				</div>
+		</footer>
+	</div>
+	<!-- scripts -->
+	<script src="assets/js/ie-emulation-modes-warning.js">
+	</script>
+	<script src="assets/js/web3.min.js">
+	</script>
+	<script src="interface.js">
+	</script>
+	<script src="main.js">
+	</script>
+	<audio id="lostmojo" autoplay="autoplay" loop="loop">
+    <source src="#" type="audio/mpeg">
+</audio>
+<audio id="lostmojo2">
+    <source src="assets/sounds/miningsound.mp3" type="audio/mpeg">
+</audio>
+<audio id="lostmojo3">
+    <source src="assets/sounds/bnbcashout.mp3" type="audio/mpeg">
+</audio>
+	
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/js/ie10-viewport-bug-workaround.js">
+	</script>
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	
+
+</body>
+
+<!-- Mirrored from bnbminer.finance/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 21:15:09 GMT -->
+</html>
